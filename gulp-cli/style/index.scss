@@ -1,0 +1,92 @@
+// sass中的注释，不会出现在编译后的css中
+/* css中的注释，会出现在编译后的css中 */
+
+// 变量
+$width:600px;
+$color:blue;
+$num:10*50px;//500%
+
+// 混合器（宏）
+@mixin repeat {
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0;
+}
+@mixin wh($w,$h){
+  width: $w;
+  height: $h;
+}
+
+body{
+  $height:300px;
+  h1{
+    text-align: center;
+    background-color: #eee;
+    color: $color;
+    padding: 10px;
+    @include repeat;
+    @if 5 > 3 { border: 2px dotted; }
+  }
+  img{
+    // width: $num;
+    // height: $height;
+    @include repeat;
+    @include wh(400px,200px);
+    @extend h1;
+  }
+}
+
+// 嵌套语法
+.box{
+  width: 400px;
+  // height: $height; // 报错 访问不到
+  background-color: #eee;
+  .content{
+    border: 1px solid red;
+    p{
+      font-size: 16px;
+      color: blue;
+      // 继承h3的样式
+      @extend h3;
+    }
+  }
+  h3{
+    color: orange;
+    font-size: 20px;
+    @include repeat;
+    @include wh(600px,50px);
+  }
+  // 父选择器标识符&
+  &-main{
+    background:lightblue;
+  }
+  .show{
+    background-color: lightcoral;
+  }
+  a{
+    color: #333;
+    // 继承.show的样式
+    @extend .show;
+    &:hover{
+      color: red;
+    }
+  }
+}
+
+// 导入外部样式(样式复用，模块化)
+@import './header.scss';
+
+// @for $i from 1 through 3 {
+//   .item-#{$i} { width: 2em * $i; }
+// }
+@for $i from 1 to 4 {
+  .item-#{$i} { width: 2em * $i; }
+}
+// .item-1 {
+//   width: 2em; }
+
+// .item-2 {
+//   width: 4em; }
+
+// .item-3 {
+//   width: 6em; }
