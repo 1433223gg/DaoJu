@@ -1,6 +1,7 @@
 # 项目说明文档
 ## 项目目标
 - 仿写TX道聚城实现基本功能
+- https://daoju.qq.com/lol/index.shtml?ADTAG=innercop.lol.SY.sy_new
 
 ## 项目要求
 1. 首页 商品列表页 商品详情页 购物车页 登录 注册
