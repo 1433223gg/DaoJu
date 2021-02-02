@@ -25,7 +25,7 @@ task('html',async ()=>{
 // 编译sass
 task('sass',async ()=>{
   src('./style/*.scss')
-  .pipe(load.sass().on('error', load.sass.logError))//编译sass
+  .pipe(load.sassChina().on('error', load.sassChina.logError))//编译sass
   .pipe(dest('./dist/style'))
   .pipe(load.connect.reload())
 })

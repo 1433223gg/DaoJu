@@ -21,7 +21,7 @@ task('style',async ()=>{
 // 编译sass
 task('sass',async ()=>{
   src('./style/*.scss')
-  .pipe(load.sass())//编译sass
+  .pipe(load.sassChina())//编译sass
   .pipe(load.rev())//给文件名添加哈希值
   .pipe(load.minifyCss())//压缩css
   .pipe(dest('./dist/style'))//写入到dist目录下
