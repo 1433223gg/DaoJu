@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin: 0;padding: 0;}
+body{font-size: 16px;font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;}
+/*统一字体大小和字体*/
+ul,ol,li{list-style: none;}
+/*不要列表前面的列表符号，一般用背景图做列表符号*/
+b,strong{font-weight: normal;}
+/*去掉标签加粗特性*/
+i,em{font-style: normal;}
+/*去掉标签倾斜特性*/
+a,u{text-decoration: none;}
+/*去掉标签下划线属性，a为超链接*/
+img{border: 0;display: block;}
+/*去掉图片某些属性*/
+h1,h2,h3,h4,h5,h6{font-size: 16px;font-weight: normal;}
+/*使标签统一大小为标准大小，标准粗细*/
+input{outline: none;}
+/*去掉鼠标靠近输入框时出现的蓝色框*/
+.clear-fix::after{
+    content:"";
+    clear:both;
+    display:block;
+    height:0;
+    width:100%;
+    overflow:hidden;
+    visibility:hidden;
+}

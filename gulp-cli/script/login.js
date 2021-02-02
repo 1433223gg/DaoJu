@@ -1,4 +1,6 @@
-var h1 = document.querySelector('h1')
-h1.onclick = function (){
-  alert('你好')
-}
+import './jquery-1.8.3'
+
+var winwidth =  document.documentElement.clientWidth
+setInterval(function(){
+  
+})

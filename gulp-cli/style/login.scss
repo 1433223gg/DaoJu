@@ -1,3 +1,44 @@
-h1{
-  color: pink;
+.logo{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  margin: 10px 0 0 30px;
+  background: url("../image/QQlogo.png") no-repeat 0 10px;
+  h1{
+    display: block;
+    height: 43px;
+    line-height: 43px;
+    font-size: 36px;
+    color: #000;
+    padding: 10px 5px 10px 46px;
+  }
+}
+.slide{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 480px;
+  float: left;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;//把背景图片放大到适合元素容器的尺寸，图片比例不变，但是要注意，超出容器的部分可能会裁掉
+  background-image: url(../image/QQloginslide1.jpg);
+}
+
+.top{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.main_wrap{
+  margin-left: 480px;
+  min-width: 480px;
+  position: relative;
+  height: 100%;
+  .main{
+    width: 100%;
+  }
 }
