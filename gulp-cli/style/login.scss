@@ -30,8 +30,68 @@
 
 .top{
   position: fixed;
+  z-index: 9999;
   right: 0;
   top: 0;
+    ul{
+      padding-top: 10px;
+      padding-right: 20px;
+      li{
+        float: left;
+        margin: 20px 40px 0 0 ;
+        font-size: 16px;
+        color: rgba(0,0,0,.5);
+        cursor: pointer;
+      }
+      .goodnum{
+        color: #fff;
+        padding: 0 10px 0 24px;
+        line-height: 24px;
+        background-color: #f54444;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        img{
+          position: absolute;
+          left: -5px;
+          top: -10px;
+        }
+      }
+      .language{
+        position: relative;
+      }
+      .language div{
+        position: absolute;
+        // background-color: lightblue;
+        display: none;
+      }
+      .language div p{
+        margin-top: 20px;
+        padding: 5px 0 5px 0;
+      }
+      .language div p:hover{
+        color: rgba(0,0,0,.9);
+        transition: color 0.3s;
+      }
+      .language img{
+        display: inline-block;
+        opacity: 0.5;
+      }
+      .language:hover{
+        span{
+          color: rgba(0,0,0,.9);
+          transition: color 0.3s;
+        }
+        img{
+          opacity: 1;
+          transition: opacity 0.3s;
+        }
+      }
+      .opinion:hover{
+        color: rgba(0,0,0,.9);
+        transition: color 0.3s;
+      }
+    }
 }
 .main_wrap{
   margin-left: 480px;
@@ -39,6 +99,70 @@
   position: relative;
   height: 100%;
   .main{
+    position: absolute;
+    padding-bottom: 10px;
+    top: 100px;
     width: 100%;
+    .form{
+      position: relative;
+      margin: 0 auto;
+      width: 480px;
+      h2{
+        font-size: 44px;
+        margin-bottom: 18px;
+      }
+      h3{
+        font-size: 28px;
+        display: inline-block;
+        margin-bottom: 30px;
+        a{
+          margin-left: 120px;
+          font-size: 24px;
+          color:#359eff
+        }
+        a:hover{
+          color: #2b72ff;
+        }
+      }
+      .ipt{
+        margin-top: 20px;
+        width: 460px;
+        padding-left: 20px;
+        height: 52px;
+        font-size: 20px;
+        border: 1px solid #549df8;
+      }
+      .nickname_error_wrap,.password_error{
+        width: 480px;
+        position: relative;
+        img{
+          margin-top: 5px;
+          display: inline-block;
+        }
+        p{
+          position: absolute;
+          left: 25px;
+          top: 5px;
+          display: inline-block;
+          font-size: 14px;
+          color: #ff5b5b;
+        }
+      }
+      .password_tips div{
+        width: 480px;
+        position: relative;
+        img{
+          margin-top: 5px;
+          display: inline-block;
+        }
+        p{
+          position: absolute;
+          left: 25px;
+          top: 5px;
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
