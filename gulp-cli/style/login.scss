@@ -29,7 +29,7 @@
 }
 
 .top{
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   right: 0;
   top: 0;
@@ -125,12 +125,15 @@
         }
       }
       .ipt{
-        margin-top: 20px;
+        margin-top: 30px;
         width: 460px;
         padding-left: 20px;
         height: 52px;
         font-size: 20px;
         border: 1px solid #549df8;
+      }
+      .nickname_error,.password_error{
+        display: none;
       }
       .nickname_error_wrap,.password_error{
         width: 480px;
@@ -148,6 +151,37 @@
           color: #ff5b5b;
         }
       }
+      .password{
+        position: relative;
+        div{
+          display: none;
+          width: 44px;
+          height: 36px;
+          position: absolute;
+          left: 420px;
+          top: 40px;
+          background-image: url(../image/eye-close.png);
+        }
+      }
+      .password_tips{
+        display: none;
+      }
+      .change{
+        display: none;
+        width: 480px;
+        position: relative;
+        img{
+          margin-top: 5px;
+          display: inline-block;
+        }
+        p{
+          position: absolute;
+          left: 25px;
+          top: 5px;
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
       .password_tips div{
         width: 480px;
         position: relative;
@@ -162,6 +196,155 @@
           display: inline-block;
           font-size: 14px;
         }
+      }
+    }
+    .phone{
+      width: 500px;
+      // overflow: hidden;
+      margin-top: 30px;
+      .list_wrap{
+        float: left;
+        width: 154px;
+        margin-right: 23px;
+        // background-color: lightblue;
+        position: relative;
+        .list_outer{
+          width: 154px;
+          // background-color: lightcoral;
+          position: relative;
+          input{
+            font-size: 20px;
+            width: 134px;
+            height: 54px;
+            padding-left: 20px;
+            border: 1px solid #549df8;
+            border-color: #777;
+          }
+          img{
+            position: absolute;
+            left: 130px;
+            top: 25px;
+            
+          }
+        }
+        .list_inner{
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          width: 478px;
+          height: 160px;
+          // overflow: auto;
+          ul{
+            width: 478px;
+            height: 160px;
+            overflow: auto;
+            // padding-top: 5px;
+            li{
+              font-size: 20px;
+              cursor: pointer;
+              text-indent: 20px;
+              padding: 10px 0 10px 0;
+            }
+            li:hover{
+              background-color: #eee;
+              transition: background-color 0.3s;
+            }
+          }
+        }
+        p{
+          font-size: 12px;
+          margin-top: 5px;
+          margin-left: 5px;
+          color: #333;
+        }
+        p:nth-of-type(2){
+          display: none;
+          color: #ff5b5b;
+        } 
+      }
+      .phonenum{
+        input{
+          width: 280px;
+          height: 54px;
+          padding-left: 20px;
+          border: 1px solid #777;
+          font-size: 20px;
+        }
+      }
+    }
+    .message{
+      width: 500px;
+      margin-top: 40px;
+      overflow: hidden;
+      display: none;
+      input{
+        float: left;
+        font-size: 20px;
+        width: 134px;
+        height: 54px;
+        padding-left: 20px;
+        border: 1px solid #549df8;
+        margin-right: 20px;
+      }
+      span{
+        float: left;
+        width: 300px;
+        height: 54px;
+        line-height: 56px;
+        // padding-left: 20px;
+        border: 1px solid #549df8;
+        font-size: 20px;
+        text-align: center;
+        background-color: #3487ff;
+        color: #fff;
+        cursor: pointer;
+      }
+      span:hover{
+        background-color: #3580eb;
+      }
+    }
+    .submit{
+      width: 480px;
+      height: 54px;
+      margin-top: 30px;
+      line-height: 56px;
+      // padding-left: 20px;
+      border: 1px solid #549df8;
+      font-size: 20px;
+      text-align: center;
+      background-color: #3487ff;
+      color: #fff;
+      cursor: pointer;
+    }
+    .submit:hover{
+      background-color: #3580eb;
+    }
+    .readed{
+      width: 500px;
+      margin-top: 30px;
+      color: #ccc;
+      .left{
+        width: 320px;
+        display: inline-block;
+        img{
+          float: left;
+          margin-right: 5px;
+          padding-top: 2px;
+        }
+      }
+      .right{
+        display: inline-block;
+      }
+    }
+    .rool{
+      width: 200px;
+      margin-left: 20px;
+      margin-top: 10px;
+      display: none;
+      a{
+        float: left;
+        color: #2b72ff;
       }
     }
   }

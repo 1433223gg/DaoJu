@@ -47,6 +47,7 @@
         </div>
         <div class="password">
           <input type="password" placeholder="密码" class="ipt">
+          <div title="长按显示密码"></div>
         </div>
         <div class="password_error_wrap">
           <div class="password_error">
@@ -57,20 +58,30 @@
             <div><img src="./image/logininfo.png" alt=""> <p>长度为8-16个字符</p></div>
             <div><img src="./image/logininfo.png" alt=""> <p>必须包含字母、数字、符号中至少2种</p></div>
           </div>
+          <div class="change">
+            <img src="" alt="">
+            <p></p>
+          </div>
         </div>
         <div class="phone">
           <div class="list_wrap">
             <div class="list_outer">
-              <p>+86</p><img src="./image/logindown.png" alt="">
+              <input type="text" value="+86">
+              <img src="./image/logindown.png" alt="" class="down">
             </div>
-            <div class="list_inner">
+            <div class="list_inner" >
               <ul>
                 <li>中国 +86</li>
+                <li>中国香港特别行政区 +852</li>
+                <li>中国香港特别行政区 +853</li>
+                <li>中国香港特别行政区 +852</li>
+                <li>中国香港特别行政区 +853</li>
                 <li>中国香港特别行政区 +852</li>
                 <li>中国香港特别行政区 +853</li>
               </ul>
             </div>
             <p>可通过该手机号找回密码</p>
+            <p>手机号码格式不正确！</p>
           </div>
           <div class="phonenum">
             <input type="text" placeholder="手机号码">
@@ -84,11 +95,17 @@
           <span>发送短信验证码</span>
         </div>
         <div class="submit">
-          <span>立即注册</span>
+          <p>立即注册</p>
         </div>
         <div class="readed">
-          <img src="./image/checkbox_normal.png" alt=""> 我已阅读并同意相关服务条款和隐私政策
-          <img src="./image/logindown.png" alt="">
+          <div class="left">
+            <img src="./image/checkbox_check.png" alt=""> 
+            <p>我已阅读并同意相关服务条款和隐私政策</p> 
+          </div>
+          <div class="right">
+            <img src="./image/logindown.png" alt="">
+          </div>
+          
         </div>
         <div class="rool">
           <a href="#">《QQ号码规则》</a>
