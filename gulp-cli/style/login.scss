@@ -273,6 +273,15 @@
         }
       }
     }
+    .message_err{
+      p{
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 5px;
+        color: #ff5b5b;
+        display: none;
+      }
+    }
     .message{
       width: 500px;
       margin-top: 40px;

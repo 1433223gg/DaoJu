@@ -222,12 +222,14 @@ $('.phonenum input').on('blur',function(){
             $('.phonenum input').css('background','url(../image/logintick.png) no-repeat 250px 20px')
             $('.phonenum input').css('borderColor','#777')
             phonenum = true
+
         }else{
             $('.list_wrap p').eq(0).hide(200)
             $('.list_wrap p').eq(1).show(200)
             $('.phonenum input').css('borderColor','#ff5b5b')
             $('.phonenum input').css('color','#ff5b5b')
             phonenum = false
+
         }
     }else{
         $('.message').hide(200)
@@ -261,18 +263,54 @@ $('.readed .left img').on('click',function(){
     }
 })
 
-var ident = require('./ident_num.js')
+var ident
+import {num} from './ident_num.js'
 // 发送验证码点击
 $('.message span').on('click',function(){
-    
-    console.log(ident);
+    alert(num)
+    function ide(){
+        ident = num
+        return ident
+    }
+    ide()
 })
 
+// 验证码输入
+$('.message input').on('focus',function(){
+    $('.message_err p').hide(200)
+    $(this).css('borderColor','#549df8')
+    $(this).css('color','#000')
+})
+$('.message input').on('blur',function(){
+    if($('.message input')[0].value === ident){
+        // alert('验证码正确')
+        $(this).css('borderColor','#777')
+        $(this).css('color','#000')
+    }else{
+        $(this).css('borderColor','#ff5b5b')
+        $(this).css('color','#ff5b5b')
+        $('.message_err p').show(200)
+        // setTimeout(function(){
+        //     $('.message span').css('backgroundColor','#f0f0f0')
+        //     $('.message span').css('borderColor','#f0f0f0')
+        //     $('.message span').css('color','#ccc')
+        // },5)
+        
+    }
+})
+
+// 注册按钮点击
 $('.submit').on('click',function(){
     // 自动触发失去焦点
     $('.nickname .ipt').trigger('blur')
     $('.password .ipt').trigger('blur')
-    if(($('.nickname .ipt').css('borderColor') === 'rgb(119, 119, 119)')&&($('.password .ipt').css('borderColor') === 'rgb(119, 119, 119)')&& phonenum && !(check%2)){
+    if(($('.nickname .ipt').css('borderColor') === 'rgb(119, 119, 119)')&&($('.password .ipt').css('borderColor') === 'rgb(119, 119, 119)')&& phonenum && !(check%2) && ($('.message input')[0].value === ident)){
+        // 允许注册
         alert('ok')
+        
     }
+    // alert(ident)
+    // if($('.message input')[0].value === ident){
+    //     // alert('验证码正确')
+    // }
 })
