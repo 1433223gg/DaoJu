@@ -44,6 +44,20 @@ task('image',async ()=>{
   .pipe(load.connect.reload())
 })
 
+// 处理php
+task('php',async ()=>{
+  src('./php/*.*')
+  .pipe(dest('./dist/php'))
+  .pipe(load.connect.reload())
+})
+
+// 处理data json数据
+task('data',async ()=>{
+  src('./data/*.*')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+})
+
 // 启动一个服务，实现自动刷新
 task('reload',async ()=>{
   load.connect.server({
@@ -58,10 +72,12 @@ task('watch',async ()=>{
   watch('./style/*.scss',series('sass'))
   watch('./script/*.js',series('script'))
   watch('./image/*.*',series('image'))
+  watch('./php/*.php',series('php'))
+  watch('./data/*.json',series('data'))
 })
 
 // 打包（开发环境）
-task('dev',series('delDist','html','sass','script','image'))
+task('dev',series('delDist','html','sass','script','image','php','data'))
 
 // 启动项目
 task('start',series('dev','reload','watch'))

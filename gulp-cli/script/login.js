@@ -40,7 +40,7 @@ $('.nickname .ipt').on('blur',function(){
         return
     }
     $(this).css('borderColor','#777')
-    $(this).css('background','url(../image/logintick.png) no-repeat 440px 20px')
+    $(this).css('background','url(./image/logintick.png) no-repeat 440px 20px')
     nickname = true
 })
 
@@ -57,27 +57,27 @@ $('.password .ipt').on('keyup',function(){
     var reg3 = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$]{2,}$/
     if(!reg3.test(pass)){ //如果不由两种类型组成
         err_num = 3
-        $('.password_tips div img').eq(2).attr('src','../image/logininfo.png')
+        $('.password_tips div img').eq(2).attr('src','./image/logininfo.png')
     }else{
-        $('.password_tips div img').eq(2).attr('src','../image/logingreen.png')
+        $('.password_tips div img').eq(2).attr('src','./image/logingreen.png')
         err_num = 0
     }
     if(!reg2.test(pass)){ //如果不由8~16字符组成
         err_num = 2
-        $('.password_tips div img').eq(1).attr('src','../image/logininfo.png')
+        $('.password_tips div img').eq(1).attr('src','./image/logininfo.png')
         // console.log('8,16');
     }else{
-        $('.password_tips div img').eq(1).attr('src','../image/logingreen.png')
+        $('.password_tips div img').eq(1).attr('src','./image/logingreen.png')
         // err_num = 0
     }
     if(reg1.test(pass)){ //如果有空格
         // console.log('有空格'); 
         err_num = 1  
-        $('.password_tips div img').eq(0).attr('src','../image/logininfo.png')
+        $('.password_tips div img').eq(0).attr('src','./image/logininfo.png')
     }else{
-        $('.password_tips div img').eq(0).attr('src','../image/logingreen.png')
+        $('.password_tips div img').eq(0).attr('src','./image/logingreen.png')
     }
-    console.log(err_num);
+    // console.log(err_num);
 })
 
 // 密码输入检验
@@ -107,7 +107,7 @@ $('.password .ipt').on('blur',function(){
         $(this).css('color','#ff5b5b')
         $('.password_tips').hide(200);
         $('.password_error_wrap .change').css('display','block')
-        $('.password_error_wrap .change img').attr('src','../image/loginerror.png')
+        $('.password_error_wrap .change img').attr('src','./image/loginerror.png')
         $('.password_error_wrap .change p').html('不能包含空格！')
     }
     else if(err_num === 2){
@@ -116,7 +116,7 @@ $('.password .ipt').on('blur',function(){
         $(this).css('color','#ff5b5b')
         $('.password_tips').hide(200);
         $('.password_error_wrap .change').css('display','block')
-        $('.password_error_wrap .change img').attr('src','../image/loginerror.png')
+        $('.password_error_wrap .change img').attr('src','./image/loginerror.png')
         $('.password_error_wrap .change p').html('长度应该为8-16个字符嗷！')
     }
     else if(err_num === 3){
@@ -125,12 +125,12 @@ $('.password .ipt').on('blur',function(){
         $(this).css('color','#ff5b5b')
         $('.password_tips').hide(200);
         $('.password_error_wrap .change').css('display','block')
-        $('.password_error_wrap .change img').attr('src','../image/loginerror.png')
+        $('.password_error_wrap .change img').attr('src','./image/loginerror.png')
         $('.password_error_wrap .change p').html('字符、数字、特殊字符必须包含至少两个哦！')
     }else{
         $(this).css('borderColor','#777')
         $('.password div').css('left','380px')
-        $('.password .ipt').css('background','url(../image/logintick.png) no-repeat 440px 20px')
+        $('.password .ipt').css('background','url(./image/logintick.png) no-repeat 440px 20px')
         $('.password_tips').hide(200);
     }
 })
@@ -141,9 +141,9 @@ var eye = 0
 setInterval(function(){
     if($('.password .ipt')[0].value){
         if(eye === 1){
-            $('.password div').css('background','url(../image/eye.png)')
+            $('.password div').css('background','url(./image/eye.png)')
         }else{
-            $('.password div').css('background','url(../image/eye-close.png)')
+            $('.password div').css('background','url(./image/eye-close.png)')
         }
         $('.password div').css('display','block')
     }else{
@@ -169,13 +169,13 @@ $('.password div').on('mouseup',function(){
 var down_num = 0
 $('.list_outer input').on('focus',function(){
     $('.list_inner').show(200)
-    $('.list_outer img').attr('src','../image/loginup.png')
+    $('.list_outer img').attr('src','./image/loginup.png')
     $('.list_outer input').css('borderColor','#549df8')
     down_num++
 })
 $('.list_outer input').on('blur',function(){
     $('.list_inner').hide(200)
-    $('.list_outer img').attr('src','../image/logindown.png')
+    $('.list_outer img').attr('src','./image/logindown.png')
     $('.list_outer input').css('borderColor','#777')
     down_num++
 })
@@ -183,12 +183,12 @@ $('.list_outer img').on('click',function(){
     down_num++
     if(down_num%2){
         $('.list_inner').show(200)
-        $('.list_outer img').attr('src','../image/loginup.png')
+        $('.list_outer img').attr('src','./image/loginup.png')
         $('.list_outer input').focus()
     }
     else{
         $('.list_inner').hide(200)
-        $('.list_outer img').attr('src','../image/logindown.png')
+        $('.list_outer img').attr('src','./image/logindown.png')
     }
 })
 $('.list_inner ul li').on('mousedown',function(){
@@ -219,7 +219,7 @@ $('.phonenum input').on('blur',function(){
         var reg = /^1[3456789]\d{9}$/
         if(reg.test(phone_text)){
             // alert('对了')
-            $('.phonenum input').css('background','url(../image/logintick.png) no-repeat 250px 20px')
+            $('.phonenum input').css('background','url(./image/logintick.png) no-repeat 250px 20px')
             $('.phonenum input').css('borderColor','#777')
             phonenum = true
 
@@ -243,10 +243,10 @@ var upper = 0
 $('.readed .right').on('click',function(){
     upper++
     if(upper%2){
-        $('.readed .right img').attr('src','../image/loginup.png')
+        $('.readed .right img').attr('src','./image/loginup.png')
         $('.rool').show(200)
     }else{
-        $('.readed .right img').attr('src','../image/logindown.png')
+        $('.readed .right img').attr('src','./image/logindown.png')
         $('.rool').hide(200)
     }
     
@@ -257,9 +257,9 @@ var check = 0
 $('.readed .left img').on('click',function(){
     check++
     if(check%2){
-        $('.readed .left img').attr('src','../image/checkbox_normal.png')
+        $('.readed .left img').attr('src','./image/checkbox_normal.png')
     }else{
-        $('.readed .left img').attr('src','../image/checkbox_check.png')
+        $('.readed .left img').attr('src','./image/checkbox_check.png')
     }
 })
 
@@ -299,18 +299,53 @@ $('.message input').on('blur',function(){
     }
 })
 
-// 注册按钮点击
+// // 注册按钮点击
+// $('.submit').on('click',function(){
+//     // 自动触发失去焦点
+//     $('.nickname .ipt').trigger('blur')
+//     $('.password .ipt').trigger('blur')
+//     if(($('.nickname .ipt').css('borderColor') === 'rgb(119, 119, 119)')&&($('.password .ipt').css('borderColor') === 'rgb(119, 119, 119)')&& phonenum && !(check%2) && ($('.message input')[0].value === ident)){
+//         // 允许注册
+//         alert('ok')
+//         let username = $('.nickname .ipt')[0].value
+//         let password = $('.password .ipt')[0].value
+//         let pre_phone = $('.list_outer input')[0].value
+//         let phone = $('.phonenum input')[0].value
+//         let ident_num = $('.message input')[0].value
+//         let data_all = {username:username,password:password,pre_phone:pre_phone,phone:phone,ident_num:ident_num}
+//         $.ajax({
+//             url:'http://127.0.0.1/dist/php/1.php',
+//             type:'get',
+//             data:data_all,
+//             dataType:'json',
+//             success:function(data){
+//                 console.log(data);
+//             },
+//             error:function(err){
+//                 console.log(err);
+//             }
+//         })
+//     }
+// })
+
+// 测试
 $('.submit').on('click',function(){
-    // 自动触发失去焦点
-    $('.nickname .ipt').trigger('blur')
-    $('.password .ipt').trigger('blur')
-    if(($('.nickname .ipt').css('borderColor') === 'rgb(119, 119, 119)')&&($('.password .ipt').css('borderColor') === 'rgb(119, 119, 119)')&& phonenum && !(check%2) && ($('.message input')[0].value === ident)){
-        // 允许注册
-        alert('ok')
-        
-    }
-    // alert(ident)
-    // if($('.message input')[0].value === ident){
-    //     // alert('验证码正确')
-    // }
+    let username = $('.nickname .ipt')[0].value
+    let password = $('.password .ipt')[0].value
+    let pre_phone = $('.list_outer input')[0].value
+    let phone = $('.phonenum input')[0].value
+    let ident_num = $('.message input')[0].value
+    let data_all = {username:username,password:password,pre_phone:pre_phone,phone:phone,ident_num:ident_num}
+    $.ajax({
+        url:'http://127.0.0.1/dist/php/1.php',
+        type:'get',
+        data:data_all,
+        dataType:'json',
+        success:function(data){
+            console.log(data);
+        },
+        error:function(err){
+            console.log(err);
+        }
+    })
 })

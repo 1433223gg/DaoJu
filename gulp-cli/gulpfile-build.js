@@ -60,5 +60,17 @@ task('html',async ()=>{
   },2000)
 })
 
+// 处理php
+task('php',async ()=>{
+  src('./php/*.*')
+  .pipe(dest('./dist/php'))
+})
+
+// 处理data
+task('data',async ()=>{
+  src('./data/*.*')
+  .pipe(dest('./dist/data'))
+})
+
 // 打包（生成环境）
-task('build',series('delDist','sass','script','image','html'))
+task('build',series('delDist','sass','script','image','html','php','data'))
