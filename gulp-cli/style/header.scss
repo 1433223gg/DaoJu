@@ -1,11 +1,229 @@
-.header{
-  overflow: hidden;
-  ul{
-    list-style: none;
-    li{
+
+
+.top_1{
+  width: 1190px;
+  margin: 0 auto;
+  height: 30px;
+  color: #9f9f9f;
+  background: none;
+  .left{
+    margin-top: 7px;
+    overflow: hidden;
+    float: left;
+    ul{
+      li{
+        float: left;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .mobile{
+        text-indent: 12px;
+        background: url(../image/indexico.png) no-repeat;
+        background-position: -42px -822px;
+      }
+      li:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .right{
+    overflow: hidden;
+    float: right;
+    width: 400px;
+    margin-top: 7px;
+    p{
       float: left;
-      width: 120px;
-      line-height: 30px;
+      margin-right: 20px;
+      font-size: 12px;
+      span{
+        cursor: pointer;
+      }
+      span:hover{
+        text-decoration: underline;
+      }
+    }
+    ul{
+      li{
+        float: left;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      li:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.menu{
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  // background-color: #fff;
+}
+.top_2{
+  width: 1190px;
+  margin: 0 auto;
+  height: 96px;
+  color: #9f9f9f;
+  background: none;
+  .logo_left{
+    margin: 23px 0 0;
+    width: 280px;
+    height: 52px;
+    float: left;
+    h1{
+      width: 280px;
+      height: 55px;
+      background: url(../image/navico.png) no-repeat;
+      background-position: -670px -5px;
+    }
+  }
+  .search{
+    float: left;
+    margin: 23px 65px 0 100px;
+    width: 522px;
+    height: 51px;
+    .wrap{
+      width: 522px;
+      height: 51px;
+      background: url(../image/navico.png) no-repeat;
+      background-position: -999px 0;
+      position: relative;
+      input{
+        float: left;
+        width: 450px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 14px;
+        color: #9f9f9f;
+        border: 0;
+        background: none;
+        padding: 14px 10px 15px 10px;
+      }
+      input:hover{
+        color: #cfcfcf;
+      }
+      span{
+        position: absolute;
+        width: 49px;
+        height: 46px;
+        top: 2px;
+        right: 0;
+        z-index: 2;
+        background: url(../image/navico.png) no-repeat;
+        background-position: -1560px 0;
+      }
+      span:hover{
+        background-color: rgba(0,0,0,.5);
+      }
+    }
+  }
+  .logo_right{
+    float: left;
+    margin: 23px 0 0;
+    width: 223px;
+    height: 59px;
+    h2{
+      float: left;
+      width: 223px;
+      height: 59px;
+      background: url(../image/navico.png) no-repeat;
+      background-position: -437px -5px;
+    }
+  }
+}
+.top_3{
+  width: 1190px;
+  margin: 0 auto;
+  height: 76px;
+  color: #9f9f9f;
+  background: none;
+  .left{
+    float: left;
+    ul{
+      li{
+        width: 134px;
+        height: 76px;
+        float: left;
+        text-align: center;
+        line-height: 76px;
+        a{
+          color: #9f9f9f;
+          font-size: 18px;
+        }
+      }
+      li:hover{
+        a{
+          color: #ff5900;
+        }
+      }
+      .choose{
+        background: url(../image/navico.png) no-repeat;
+        background-position: -275px -5px;
+        a{
+          font-weight: bold;
+          color: #fef7ec;
+          text-shadow: 1px 3px 3px #bf4d00;
+        }
+      }
+      .choose:hover{
+        a{
+          color: #fef7ec;
+        }
+      }
+    }
+  }
+  .right{
+    float: right;
+    width: 192px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    p{
+      width: 28px;
+      height: 24px;
+      background: url(../image/navico.png) no-repeat;
+      background-position: -237px -5px;
+      position: absolute;
+      top: 26px;
+      left: 36px;
+    }
+    div{
+      position: absolute;
+      left: 68px;
+      color: #ff5900;
+      cursor: pointer;
+    }
+  }
+}
+.top_4{
+  width: 1190px;
+  height: 48px;
+  margin: 0 auto;
+  background: none;
+  ul{
+    li{
+      width: 118px;
+      height: 48px;
+      float: left;
+      text-align: center;
+      line-height: 48px;
+      a{  
+        color: #9f9f9f;
+        font-size: 14px;
+      }
+    }
+    li:hover{
+      a{
+        color: #fff;
+      }
+    }
+    .no_1{
+      width: 152px;
     }
   }
 }

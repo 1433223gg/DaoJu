@@ -1,0 +1,318 @@
+@import './box_type.scss';
+@import './header.scss';
+@import './topic_type.scss';
+@import './foot.scss';
+body{
+    overflow: auto;
+   }
+#wrap_all{
+    width: 100%;
+    // height: 2000px;
+    // background: #f3f4f6 url(../image/bg-index.jpg) no-repeat top center;
+    background-color: #f3f4f6;
+    min-width: 1190px;
+    overflow: hidden;
+    // color: #333;
+    .menu{
+        background: url(//js01.daoju.qq.com/mall/images/channelmall/lol/bg-head.jpg) no-repeat top center;
+        .top_2{
+            padding-top: 10px;
+            padding-bottom: 22px;
+        }
+        .top_4{
+            background: #e6e6e8;
+            a{
+                color: #333;
+            }
+            li:nth-of-type(1){
+                a{
+                    color: #36ab87;
+                }
+                border-bottom: 2px solid #36ab87;
+            }
+            li:hover{
+                a{
+                    color: #36ab87;
+                }
+                border-bottom: 2px solid #36ab87;
+            }
+        }
+    }
+    #location_box{
+        margin: 24px auto 8px;
+        width: 1190px;
+        color: #606060;
+        height: 18px;
+        position: relative;
+        zoom: 1;
+        cursor: pointer;
+        .location{
+            a{
+                color: #3a3f4a;
+            }
+        }
+    }
+    #lists{
+        width: 1190px;
+        margin: 0 auto;
+        // height: 402px;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        .left{
+            width: 215px;
+            padding: 0 13px 0 0;
+            height: auto;
+            float: left;
+            overflow: hidden;
+            margin-right: 10px;
+            .topic{
+                width: 228px;
+                height: 49px;
+            }
+            .hot{
+                width: 228px;
+                height: auto;
+                background-color: #fafbfc;
+                padding-bottom: 10px;
+                margin-bottom: 
+                15px;
+            }
+            .round{
+                width: 228px;
+                height: auto;
+                background-color: #fafbfc;
+                padding-bottom: 10px;
+                margin-bottom: 
+                10px;
+                a{
+                    margin-left: 160px;
+                }
+            }
+        }
+        .right{
+            width: 952px;
+            height: auto;
+            overflow: hidden;
+            .search{
+                width: 952px;
+                height: 106px;
+                background: #ededed;
+                .top{
+                    // width: 928px;
+                    padding: 18px 15px 0 15px;
+                    overflow: hidden;
+                    color: #2e2e2e;
+                    .guanjian{
+                        float: left;
+                        input{
+                            height: 24px;
+                            border: 1px solid #ccc;
+                            width: 338px;
+                            padding: 0 2px;
+                        }
+                    }
+                    .qujian{
+                        float: left;
+                        margin-left: 20px;
+                        text-align: left;
+                        span{
+                            float: left;
+                            cursor: pointer;
+                        }
+                        input{
+                            float: left;
+                            height: 24px;
+                            border: 1px solid #ccc;
+                            width: 34px;
+                            margin: 0 5px;
+                            padding: 0 2px;
+                        }
+                        p{
+                            float: left;
+                            margin-left: 10px;
+                            background: #f5f5f5;
+                            width: 44px;
+                            height: 24px;
+                            line-height: 24px;
+                            overflow: hidden;
+                            border: 1px solid #ccc;
+                            color: #222;
+                            font-size: 12px;
+                            text-align: center;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        p:hover{
+                            background-color: #ccc;
+                        }
+                    }
+                }
+                .but{
+                    margin-top: 20px;
+                    // overflow: hidden;
+                    .list_L{
+                        float: left;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #2e2e2e;
+                        font-size: 14px;
+                        margin-left: 20px;
+                        span{
+                            float: left;
+                            margin-right: 40px;
+                            p{
+                                background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                                background-position: -25px -71px;
+                                margin: 0 0 0 4px;
+                                width: 10px;
+                                height: 8px;
+                                overflow: hidden;
+                                display: inline-block;
+                                vertical-align: middle;
+
+                            }
+                        }
+                        .time{
+                            color: #ff5900;
+                            width: 56px;
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                    .list_R{
+                        float: left;
+                        margin-left: 10px;
+                        p{
+                            float: left;
+                            margin-right: 10px;
+                        }
+                        div{
+                            margin: 6px 5px 0 0;
+                            width: 14px;
+                            height: 14px;
+                            vertical-align: middle;
+                            overflow: hidden;
+                            cursor: pointer;
+                            background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                            background-position: -5px -252px;
+                        }
+                        .no_has{
+                            float: left;
+                        }
+                        .has{
+                            float: left;
+                        }
+                    }
+                }
+            }
+            .lists{
+                width: 952px;
+                height: auto;
+                background: #fafbfc;
+                position: relative;
+                padding-top: 17px;
+                z-index: 2;
+                margin-top: 15px;
+                overflow: hidden;
+                .page{
+                    width: 952px;
+                    overflow: hidden;
+                    // height: 40px;
+                    line-height: 40px;
+                    margin-left: 130px;
+                    padding-bottom: 40px;
+                    div{
+                        float: left;
+                        margin-right: 20px;
+                        padding: 0 5px 0 5px;
+                        border: 1px solid #ddd;
+                        text-align: center;
+                        cursor: pointer;
+                        color: #2e2e2e;
+                        input{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            text-align: center;
+                            width: 40px;
+                            height: 40px;
+                            font-size: 20px;
+                        }
+                    }
+                    .ipt{
+                        padding: 0;
+                        // padding-top: 5px;
+                        border: none;
+                    }
+                    p{
+                        float: left;
+                        margin-right: 20px;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px solid #ddd;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    p:hover{
+                        border-color: #36ab87;
+                        color: #36ab87;
+
+                    }
+                    .next{
+                        p{
+                            float: right;
+                            border: none;
+                            width: 10px;
+                            height: 10px;
+
+                        }
+                    }
+                    .pre{
+                        p{
+                            border: none;
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #flow{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 2000;
+        margin: 0 20px 215px 0;
+        a{
+          display: block;
+          border: 1px solid #e1e1e1;
+          background: #fff;
+          width: 68px;
+          padding: 7px 0;
+          text-align: center;
+          margin-top: 3px;
+          color: #333;
+          div{
+            background: url(//js02.daoju.qq.com/common/images/bg.png) no-repeat;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-position: -122px -153px;
+            margin: 0 auto;
+          }
+        }
+        a:hover{
+          background: #36ab87;
+          color: #fff;
+          text-decoration: none;
+          border-color: #36ab87;
+          div{
+            background-position: -162px -153px;
+          }
+        }
+      }
+}

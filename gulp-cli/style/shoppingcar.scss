@@ -1,0 +1,84 @@
+@import './box_type.scss';
+@import './header.scss';
+@import './topic_type.scss';
+@import './foot.scss';
+body{
+    overflow: auto;
+   }
+#wrap_all{
+    width: 100%;
+    // height: 2000px;
+    // background: #f3f4f6 url(../image/bg-index.jpg) no-repeat top center;
+    background-color: #f3f4f6;
+    min-width: 1190px;
+    overflow: hidden;
+    // color: #333;
+    .menu{
+        background: url(//js01.daoju.qq.com/mall/images/channelmall/lol/bg-head.jpg) no-repeat top center;
+        .top_2{
+            padding-top: 10px;
+            padding-bottom: 22px;
+        }
+        .top_4{
+            background: #e6e6e8;
+            a{
+                color: #333;
+            }
+            li:hover{
+                a{
+                    color: #36ab87;
+                }
+                border-bottom: 2px solid #36ab87;
+            }
+        }
+    }
+    #location_box{
+        margin: 24px auto 8px;
+        width: 1190px;
+        color: #606060;
+        height: 18px;
+        position: relative;
+        zoom: 1;
+        cursor: pointer;
+        .location{
+            a{
+                color: #3a3f4a;
+            }
+        }
+    }
+
+    #flow{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 2000;
+        margin: 0 20px 215px 0;
+        a{
+          display: block;
+          border: 1px solid #e1e1e1;
+          background: #fff;
+          width: 68px;
+          padding: 7px 0;
+          text-align: center;
+          margin-top: 3px;
+          color: #333;
+          div{
+            background: url(//js02.daoju.qq.com/common/images/bg.png) no-repeat;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-position: -122px -153px;
+            margin: 0 auto;
+          }
+        }
+        a:hover{
+          background: #36ab87;
+          color: #fff;
+          text-decoration: none;
+          border-color: #36ab87;
+          div{
+            background-position: -162px -153px;
+          }
+        }
+      }
+}

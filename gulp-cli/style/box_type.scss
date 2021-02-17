@@ -1,0 +1,182 @@
+.box_type1{
+    margin: 15px 0 1px 18px;
+    dl{
+        float: left; 
+        margin: 0 13px 19px 13px;
+        zoom: 1;
+        width: 202px;
+        height: 370px;
+        display: block;
+        position: relative;
+        color: #606060;
+        background: url(../image/indexico.png) no-repeat;
+        background-position: -237px -6px;
+        z-index: 11;
+        cursor: default;
+        dt{
+            float: left;
+            margin-bottom: 11px;
+            width: 202px;
+            height: 235px;
+            display: block;
+            overflow: hidden;
+            img{
+                margin: 23px auto 0;
+                display: block;
+                width: 116px;
+                height: 212px;
+            }
+        }
+        dd{
+            float: left;
+            margin: 0 auto;
+            width: 202px;
+            line-height: 17px;
+            text-align: center;
+            // overflow: hidden;
+            font-size: 12px;
+            a{
+                color: #2e2e2e;
+                width: 200px;
+                height: 24px;
+                line-height: 20px;
+                overflow: hidden;
+                display: inline-block;
+                cursor: pointer;
+                display: block;
+                font-size: 14px;
+            }
+            span{
+                color: #ff5900;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .btn{
+                margin:10px auto;
+                width: 124px;
+                height: 32px;
+                background: #36ab87;
+                color: #fff;
+                display: block;
+                line-height: 32px;
+                text-align: center;
+            }
+            .btn:hover{
+                background: #2e9d7b;
+            }
+        }
+    }
+    dl:hover{
+        background-position: -237px -385px;
+    }
+}
+.box_type2{
+    overflow: hidden;
+    li{
+        padding: 16px 0 18px 3px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 1px dashed #e7e7e7;
+        cursor: pointer;
+        .listnum{
+            position: absolute;
+            top: 8px;
+            left: 0;
+            z-index: 1;
+            display: block;
+            width: 20px;
+            height: 24px;
+            background-position: -5px -592px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            background: url(../image/comico.png) no-repeat;
+            background-color: #2e9d7b;
+        }
+        img{
+            display: block;
+            width: 76px;
+            height: 54px;
+            float: left;
+            margin-right: 10px;
+        }
+        .content{
+            float: left;
+            font-size: 12px;
+            color: #333;
+            h3{
+                width: 108px;
+                font-size: 12px;
+                font-weight: bold;
+                height: 14px;
+                line-height: 12px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            span{
+                display: inline-block;
+                font-weight: 600;
+            }
+            p{
+                display: inline-block;
+                font-weight: 600;
+            }
+            .qb{
+                display: inline-block;
+                margin-top: 8px;
+                height: 15px;
+            }
+        }
+    }
+    li:hover{
+        h3{
+            color: #36ab87;
+            text-decoration: underline;
+        }
+        .wx{
+            color: #ff5900;
+        }
+    }
+}
+.box_type3{
+    width: 192px;
+    height: auto;
+    margin-left: 20px;
+    li{
+        width: 192px;
+        height: 262px;
+        border-bottom: 1px dashed #e7e7e7;
+        img{
+            display: inline-block;
+            width: 192px;
+            height: 184px;
+        }
+        .info{
+            margin: 10px 0 0;
+            width: 192px;
+            height: auto;
+            font-size: 14px;
+            overflow: hidden;
+            p{
+                width: 192px;
+                height: 15px;
+                color: #535353;
+                line-height: 15px;
+                text-align: left;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .price{
+                margin-top: 8px;
+                text-align: left;
+                color: #ff5900;
+                font-weight: bold;
+                line-height: 14px;
+            }
+        }
+    }
+}

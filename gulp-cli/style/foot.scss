@@ -1,0 +1,78 @@
+/*foot*/
+#foot{
+    .foot_area{
+        background:#3b3f4a;margin-top:40px;min-width:1280px;}
+    .foot_wrap{
+        margin:0 auto;width:1280px;
+    }
+    .bx_qa{
+        padding:25px 0 33px 28px;width:1252px;
+    }
+    .bx_qa_t1{
+        width:226px;float:left;border-right:1px solid #444853;height:150px
+    }
+    .bx_qa_code{
+        width:298px;
+    }
+    .bx_qa_t1 s{
+        float:left;margin:0 10px 0 24px;width:32px;height:32px;
+    }
+    .bx_qa_t1 s.i_new{
+        background-position:0 -136px
+    }
+    .bx_qa_t1 s.i_qa{
+        background-position:-32px -136px
+    }
+    .bx_qa_t1 s.i_pay{
+        background-position:-63px -136px
+    }
+    .bx_qa_t1 s.i_kf{
+        background-position:-95px -136px
+    }
+    .bx_qa_last{
+        border-right:0
+    }
+    .bx_qa_title{
+        font:normal 16px/32px "Microsoft YaHei";color:#acb1bb;
+    }
+    .bx_qa_ul{
+        margin-left:65px
+    }
+    .bx_qa_ul li{
+        width:100px;height:24px;line-height:24px;display:block;overflow:hidden
+    }
+    .bx_qa_ul li a{
+        color:#acb1bb;font-size:12px;
+    }
+    .bx_qa_ul li a:hover{
+        text-decoration:underline;
+    }
+    .kf_box a{
+        display:block;width:177px;height:44px;background-position:0 -39px;margin:5px 0 0 42px
+    }
+    .bx_qa_code .bx_qa_ul{
+        margin-left:12px;
+    }
+    .bx_qa_code .bx_qa_ul li{
+        float:left;margin-left:40px;width:100px;height:auto;
+    }
+    .bx_qa_code .bx_qa_ul li .foot-codeimg{
+        margin-bottom:18px;width:100px;height:100px;
+    }
+    .bx_qa_code .bx_qa_ul li .foot-codename{
+        text-align:center;font-size:16px;color:#a4abb4;line-height:18px;
+    }
+    #footer_ied{
+        background:#3b3f4a;padding:30px 0 60px 0;text-align:center;line-height:19px;font-size:12px;border-top:1px solid #444853;color:#81858f
+    }
+    #footer_ied a{
+        color:#81858f}
+    #footer_ied a:hover{text-decoration:underline;
+    }
+    .business-link{
+        margin:15px 0 0 44px;display: block;width: 119px;height: 49px;background: url(//js01.daoju.qq.com/common/images/logo/business.png ) no-repeat;
+    }
+    .wrap_ied{
+        margin-top: 150px;
+    }
+}

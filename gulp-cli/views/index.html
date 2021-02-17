@@ -3,21 +3,435 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>英雄联盟道聚城首页</title>
+<!-- <link rel="icon" href="./image/QQfavicon.png" type="image/x-icon"> -->
+<link rel="stylesheet" href="./style/clear.css">
 <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
-  <h1>网站首页</h1>
-  <img src="./image/1.png" alt="">
-  <div class="box">
-    <h3>box标题</h3>
-    <div class="content">
-      <p>内容1111</p>
-      <p>内容2222</p>
+  <div id="wrap_all">
+    <div id="wrap">
+      <!-- 通用主题栏 -->
+      <div id="top">
+        <!-- 顶部登录栏 -->
+        <div class="top_1">
+            <div class="left">
+              <ul>
+                <li class="mobile">手机版</li>
+                <li class="QB">Q币充值</li>
+              </ul>
+            </div>
+            <div class="right">
+              <p>您还未登录，请<span>登录</span></p>
+              <ul>
+                <li>我的订单</li>
+                <li>个人中心</li>
+                <li>帮助中心</li>
+                <li>游戏导航</li>
+              </ul>
+            </div>
+        </div>
+        <div class="menu">
+          <!-- 搜索栏 -->
+          <div class="top_2">
+          <div class="logo_left">
+            <h1 title="道聚城"></h1>
+          </div>
+          <div class="search">
+            <div class="wrap">
+              <input type="text" value="输入道具进行搜索">
+              <span></span>
+            </div>
+          </div>
+          <div class="logo_right">
+            <h2 title="英雄联盟"></h2>
+          </div>
+          </div>
+          <!-- 主导航栏 -->
+          <div class="top_3">
+            <div class="left">
+              <ul>
+                <li class="choose">
+                  <a href="">首页</a>
+                </li>
+                <li>
+                  <a href="">商品列表</a></li>
+                <li>
+                  <a href="">活动专区</a>
+                </li>
+                <li>
+                  <a href="">限时折扣</a>
+                </li>
+                <li>
+                  <a href="">聚豆乐园</a>
+                </li>
+                <li>
+                  <a href="">周边商城</a>
+                </li>
+                <li>
+                  <a href="">个人中心</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right">
+              <p></p>
+              <div>购物车（<span>0</span>）</div>
+            </div>
+          </div>
+          <!-- 子导航栏 -->
+          <div class="top_4">
+            <ul>
+              <li class="no_1">
+                <a href="">全部分类</a>
+              </li>
+              <li>
+                <a href="">英雄</a>
+              </li>
+              <li>
+                <a href="">表情</a>
+              </li>
+              <li>
+                <a href="">海克斯及其他</a>
+              </li>
+              <li>
+                <a href="">云顶之奕</a>
+              </li>
+              <li>
+                <a href="">皮肤</a>
+              </li>
+              <li>
+                <a href="">道具</a>
+              </li>
+              <li>
+                <a href="">守卫眼皮肤</a>
+              </li>
+              <li>
+                <a href="">道具包</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 登录和广告 -->
+      <div id="mainer">
+        <div class="left">
+          <div class="login">
+            <img src="./image/default.gif" alt="">
+            <p>您还未登录哦，<a href="">立即登录</a><br>购买超值商品！</p>
+          </div>
+          <div class="bind">
+            <p>当前未绑定角色</p>
+            <a href="">立即绑定></a>
+          </div>
+          <div class="discounts">
+            <div class="quan">
+              <i></i>
+              我的优惠券
+            </div>
+            <div class="QB">
+              <i></i>
+              查询Q币Q点余额
+            </div>
+          </div>
+          <div class="topic">
+            <h3>公告</h3>
+            <a href="">更多></a>
+          </div>
+          <div class="login_list">
+            <ul>
+              <li>
+                <p>道聚城新春红包天天领</p>
+                <span>02/08</span>
+              </li>
+              <li>
+                <p>LOL商城部分炫彩原价购买...</p>
+                <span>05/09</span>
+              </li>
+              <li>
+                <p>支付异常公告</p>
+                <span>01/03</span>
+              </li>
+              <li>
+                <p>LOL商城购买异常公告</p>
+                <span>11/22</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="center">
+          <div class="slide">
+            <div class="wrap">
+              <img src="./image/1.jpg" alt="">
+              <img src="./image/2.jpg" alt="">
+              <img src="./image/3.jpg" alt="">
+              <img src="./image/4.jpg" alt="">
+            </div>
+          </div>
+          <div class="list">
+            <ul>
+              <li>水晶玫瑰 幽梦玫瑰</li>
+              <li>牛气冲天 福星高照</li>
+              <li>2021福牛贺岁</li>
+              <li>周边贺新春</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <a href="" class="activity">活动中心</a>
+          <a href="" class="shop">聚豆商城</a>
+          <div class="erweima">
+            <img src="./image/code-index.png" alt="">
+            <p>手机购买，更便捷</p>
+          </div>
+        </div>
+      </div>
+      <!-- 列表渲染 -->
+      <div id="lists">
+        <!-- 限时抢购 -->
+        <div class="timeover">
+          <div class="topic">
+            <h3>限时抢购</h3>
+            <a href="">更多></a>
+          </div>
+          <div class="boxes">
+            <ul>
+              <li>
+                <div class="content">
+                  <p class="zj">
+                    直降
+                    <em>49.50Q币</em>
+                  </p>
+                  <a href="" class="detail">
+                    <img src="https://game.gtimg.cn/images/daoju/app/lol/medium/2-22017-.jpg?_t=1570688950" alt="">
+                  </a>
+                  <p class="name">
+                    西部天使 艾希
+                  </p>
+                  <div class="price">
+                    <h4>49.50</h4>元<span>（
+                      <h5>99QB</h5>）
+                    </span>
+                  </div>
+                  <p class="time">
+                    剩余时间：
+                    <em>6天8时58分7秒</em>
+                  </p>
+                  <span class="buy">立即购买</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 新品 热门 -->
+        <div class="new">
+          <div class="left">
+            <div class="left_top">
+              <div class="topic_type">
+                <h3 class="active">新品上架</h3>
+                <h3>热门推荐</h3>
+                <a href="">更多></a>
+              </div>
+            </div>
+            <div class="left_content">
+              <div class="box_type1">
+                <dl>
+                  <dt>
+                    <img src="https://game.gtimg.cn/images/daoju/app/lol/medium/pkg-25971.jpg?_t=1611139580" alt="">
+                  </dt>
+                  <dd>
+                    <a href="" title="破败军团">破败军团 卡尔玛 炫彩礼包</a>
+
+                    Q币价:<span class="price1">&nbsp;&nbsp;&nbsp;&nbsp;171.70</span>
+                      <span>
+                        Q币
+                      </span>
+                      <br>
+                      微信价：
+                  <span>￥</span><span class="price2">166.54</span>
+                  <br>
+                  <a href="" class="btn">立即购买</a>
+                  </dd>
+                </dl> 
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <!-- 热门排行 -->
+            <div class="right_top">
+              <div class="top1">
+                <div class="topic_type">
+                  <h3 class="active">热门排行</h3>
+                </div>
+              </div>
+              <ul class="box_type2">
+                <li>
+                  <div class="listnum">01</div>
+                  <img src="https://game.gtimg.cn/images/daoju/dbm/lol/20170216_28862_2202.jpg" alt="">
+                  <div class="content">
+                    <h3>猩红之月 烬</h3>
+                    <div class="qb">
+                      Q币价： <span>79.00</span>
+                      <p>Q币</p> 
+                    </div>
+                    <br>
+                    <div class="wx">
+                      微信价： <p>￥</p> <span>76.63</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 猜你喜欢 -->
+            <div class="right_buttom">
+              <div class="top1">
+                <div class="topic_type">
+                  <h3 class="active">猜你喜欢</h3>
+                </div>
+              </div>
+              <ul class="box_type2">
+                <li>
+                  <div class="listnum">01</div>
+                  <img src="https://game.gtimg.cn/images/daoju/dbm/lol/20170216_28862_2202.jpg" alt="">
+                  <div class="content">
+                    <h3>猩红之月 烬</h3>
+                    <div class="qb">
+                      Q币价： <span>79.00</span>
+                      <p>Q币</p> 
+                    </div>
+                    <br>
+                    <div class="wx">
+                      微信价： <p>￥</p> <span>76.63</span>
+                    </div>
+                  </div>
+                </li>
+             
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 周边商城 -->
+        <div class="circum">
+          <div class="top">
+              <div class="topic_type">
+                <h3 class="active">周边商城</h3>
+                <a href="">更多></a>
+              </div>
+          </div>
+          <div class="content">
+            <dl>
+              <dt><img src="./image/zhoubian01.jpg" alt=""></dt>
+              <dd>
+                <p class="name">
+                  英雄联盟鼠标垫
+                </p>
+                <p class="price">
+                  ￥89.00
+                </p>
+              </dd>
+            </dl>
+
+          </div>
+        </div>
+        <!-- 精彩活动 -->
+        <div class="activity">
+          <div class="top">
+            <div class="topic_type">
+              <h3 class="active">精彩活动</h3>
+              <a href="">更多></a>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                <img src="https://game.gtimg.cn/upload/webplat/info/dj/20210205/41721778734398.jpg" alt="">
+                <div class="tips">
+                  <div class="act_name">
+                    福牛守护者
+                  </div>
+                  <p>活动时间：2021-02-05-2022-02-05</p>
+                  <div class="attention">
+                    <span class="like"></span><span class="num"><p>13035</p>
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 通用底部 -->
+      <div id="foot">
+        <div class="foot_area">
+    <div class="bx_qa foot_wrap clearfix">
+        <div class="bx_qa_t1">
+            <h4 class="bx_qa_title"><s class="i_sp i_new"></s>我是新手</h4>
+            <ul class="bx_qa_ul c">
+                <li><a title="什么是道聚城" target="_blank" class="btn_c" href="/mall/help/help_daoju.shtml">什么是道聚城</a></li>
+                <li><a title="如何购买道具" target="_blank" class="btn_c" href="/mall/help/help_buy.shtml">如何购买</a></li>
+                <li><a title="如何赠送道具" target="_blank" class="btn_c" href="/mall/help/help_send.shtml">如何赠送</a></li>
+                <li><a title="如何获取聚豆" target="_blank" class="btn_c" href="/mall/help/help_judou.shtml">如何获取聚豆</a></li>
+            </ul>
+        </div>
+        <div class="bx_qa_t1">
+            <h4 class="bx_qa_title"><s class="i_sp i_qa"></s>个人中心</h4>
+            <ul class="bx_qa_ul c">
+                <li><a title="道具发货时间" target="_blank" class="btn_c" href="/mall/help/help_provide.shtml">发货时间</a></li>
+                <li><a title="道具如何领取" target="_blank" class="btn_c" href="/mall/help/help_receive.shtml">如何领取</a></li>
+                <li><a title="道具补发规则" target="_blank" class="btn_c" href="/mall/help/help_reissue.shtml">补发规则</a></li>
+                <li><a title="Vip价定义" target="_blank" class="btn_c" href="/mall/help/help_vip.shtml">Vip价定义</a></li>
+                <li><a title="道具状态定义" target="_blank" class="btn_c" href="/mall/help/help_status.shtml">道具状态定义</a></li>
+            </ul>
+        </div>
+        <div class="bx_qa_t1">
+            <h4 class="bx_qa_title"><s class="i_sp i_pay"></s>支付方式</h4>
+            <ul class="bx_qa_ul c">
+                <li><a title="支付方式" target="_blank" class="btn_c" href="/mall/help/help_payment.shtml">支付方式</a></li>
+                <li><a title="购物点支付" target="_blank" class="btn_c" href="/mall/help/help_ticket.shtml">购物点支付</a></li>
+                <li><a title="如何充值" target="_blank" class="btn_c" href="/mall/help/help_recharge.shtml">如何充值</a></li>
+            </ul>
+        </div>
+        <div class="bx_qa_t1">
+            <h4 class="bx_qa_title"><s class="i_sp i_kf"></s>腾讯在线服务</h4>
+            <ul class="bx_qa_ul c">
+                <li><a title="腾讯官方在线客服" target="_blank" class="btn_c" id="kf" href="javascript:;">腾讯官方在线客服</a></li>
+            </ul>
+            <a class="business-link" target="_blank" href="//szcert.ebs.org.cn/1efd63b4-7863-490a-839f-53968220109f"></a>
+        </div>
+        <div class="bx_qa_t1 bx_qa_code bx_qa_last">
+            <ul class="bx_qa_ul c">
+                <li>
+                    <div class="foot-codeimg">
+                        <img src="//js01.daoju.qq.com/common/images/mall/zsdjc.png" width="100" height="100" alt="掌上道聚城二维码">
+                    </div>
+                    <p class="foot-codename">掌上道聚城</p>
+                </li>
+                <li>
+                    <div class="foot-codeimg">
+                        <img src="//js01.daoju.qq.com/common/images/mall/wechatdjc.png" width="100" height="100" alt="道聚城公众号">
+                    </div>
+                    <p class="foot-codename">道聚城公众号</p>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="box-main">box的内容</div>
-    <a href="#">百度链接</a>
+    <div class="foot_wrap">
+        <div id="footer_ied"><div class="wrap_ied"><p><a href="//ieg.tencent.com" target="_blank">腾讯互动娱乐</a> | <a href="//game.qq.com/contract.shtml" target="_blank">服务条款</a>| <a href="//game.qq.com/privacy_guide.shtml" target="_blank">腾讯游戏隐私保护指引</a>| <a href="//game.qq.com/privacy_guide_children.shtml" target="_blank">腾讯游戏儿童隐私保护指引</a>| <a href="//e.tencent.com/" target="_blank">广告服务</a> | <a href="//game.qq.com/hr/" target="_blank">腾讯游戏招聘</a> | <a href="//kf.qq.com/" target="_blank">腾讯游戏客服</a> | <a href="//game.qq.com/gnav" target="_blank">游戏地图</a> | <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbottom" target="_blank">成长守护平台</a> | <a href="//game.qq.com/brand/business.htm" target="_blank">商务合作</a> | <a href="//www.qq.com/map/" target="_blank">网站导航</a></p><p class="e">COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p><p><a href="//www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司 版权所有</a></p></div></div>
+    </div>
+</div>
+      </div>
+
+      <!-- 悬浮返回顶部 -->
+      <div id="flow">
+        <a href="#top">
+          <div></div>
+          返回顶部
+        </a>
+        <a href="">反馈</a>
+      </div>
+      
+    </div>
   </div>
+  
 
 <script src="./script/index.js"></script>
 </body>

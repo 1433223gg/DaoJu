@@ -299,53 +299,55 @@ $('.message input').on('blur',function(){
     }
 })
 
-// // 注册按钮点击
-// $('.submit').on('click',function(){
-//     // 自动触发失去焦点
-//     $('.nickname .ipt').trigger('blur')
-//     $('.password .ipt').trigger('blur')
-//     if(($('.nickname .ipt').css('borderColor') === 'rgb(119, 119, 119)')&&($('.password .ipt').css('borderColor') === 'rgb(119, 119, 119)')&& phonenum && !(check%2) && ($('.message input')[0].value === ident)){
-//         // 允许注册
-//         alert('ok')
-//         let username = $('.nickname .ipt')[0].value
-//         let password = $('.password .ipt')[0].value
-//         let pre_phone = $('.list_outer input')[0].value
-//         let phone = $('.phonenum input')[0].value
-//         let ident_num = $('.message input')[0].value
-//         let data_all = {username:username,password:password,pre_phone:pre_phone,phone:phone,ident_num:ident_num}
-//         $.ajax({
-//             url:'http://127.0.0.1/dist/php/1.php',
-//             type:'get',
-//             data:data_all,
-//             dataType:'json',
-//             success:function(data){
-//                 console.log(data);
-//             },
-//             error:function(err){
-//                 console.log(err);
-//             }
-//         })
-//     }
-// })
+// 注册按钮点击
+$('.submit').on('click',function(){
+    // 自动触发失去焦点
+    $('.nickname .ipt').trigger('blur')
+    $('.password .ipt').trigger('blur')
+    if(($('.nickname .ipt').css('borderColor') === 'rgb(119, 119, 119)')&&($('.password .ipt').css('borderColor') === 'rgb(119, 119, 119)')&& phonenum && !(check%2) && ($('.message input')[0].value === ident)){
+        // 允许注册
+        // alert('ok')
+        let username = $('.nickname .ipt')[0].value
+        let password = $('.password .ipt')[0].value
+        let pre_phone = $('.list_outer input')[0].value
+        let phone = $('.phonenum input')[0].value
+        let ident_num = $('.message input')[0].value
+        let data_all = {username:username,password:password,pre_phone:pre_phone,phone:phone,ident_num:ident_num}
+        $.ajax({
+            url:'http://127.0.0.1/DaoJu/gulp-cli/dist/php/1.php',
+            type:'post',
+            data:data_all,
+            dataType:'text',
+            success:function(data){
+                // console.log(data);
+                alert('恭喜您注册成功！')
+                window.location.href="index.html";
+            },
+            error:function(err){
+                console.log(err);
+            }
+        })
+    }
+})
 
 // 测试
-$('.submit').on('click',function(){
-    let username = $('.nickname .ipt')[0].value
-    let password = $('.password .ipt')[0].value
-    let pre_phone = $('.list_outer input')[0].value
-    let phone = $('.phonenum input')[0].value
-    let ident_num = $('.message input')[0].value
-    let data_all = {username:username,password:password,pre_phone:pre_phone,phone:phone,ident_num:ident_num}
-    $.ajax({
-        url:'http://127.0.0.1/dist/php/1.php',
-        type:'get',
-        data:data_all,
-        dataType:'json',
-        success:function(data){
-            console.log(data);
-        },
-        error:function(err){
-            console.log(err);
-        }
-    })
-})
+// $('.submit').on('click',function(){
+//     let username = $('.nickname .ipt')[0].value
+//     let password = $('.password .ipt')[0].value
+//     let pre_phone = $('.list_outer input')[0].value
+//     let phone = $('.phonenum input')[0].value
+//     let ident_num = $('.message input')[0].value
+//     let data_all = {username:username,password:password,pre_phone:pre_phone,phone:phone,ident_num:ident_num}
+//     $.ajax({
+//         url:'http://127.0.0.1/DaoJu/gulp-cli/dist/php/1.php',
+//         type:'get',
+//         data:data_all,
+//         dataType:'text',
+//         success:function(data){
+//             console.log(data);
+//         },
+//         error:function(err){
+//             console.log(err);
+//         }
+//     })
+// })
