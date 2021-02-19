@@ -1,0 +1,63 @@
+.login_box{
+    position: fixed;
+    top: 28%;
+    left: 36%;
+    z-index: 2000;
+    background-color: #fff;
+    border: 2px solid #eee;
+    width: 622px;
+    height: 370px;
+    text-align: center;
+    .close{
+      width: 47px;
+      height: 20px;
+      float: right;
+      background: url(//imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) -221px -126px no-repeat;
+    }
+    h2{
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 16px;
+      margin-top: 40px;
+    }
+    h3{
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    p{
+      display: block;
+      width: 272px;
+      height: 42px;
+      background: url(//imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) -1px -1px no-repeat;
+      margin-left: 177px;
+      margin-bottom: 15px;
+      input{
+        width: 258px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+        height: 18px;
+        padding: 10px 0 10px 10px;
+        line-height: 18px;
+        border: none;
+        background: 0 0;
+        color: #333;
+        font-family: Verdana,Tahoma,Arial;
+        font-size: 16px;
+      }
+    }
+    .submit{
+      color: #fff;
+      height: 40px;
+      line-height: 35px;
+      font-size: 17px;
+      background-color: #86ce2f;
+      font-weight: 400;
+      font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+      cursor: pointer;
+    }
+    a{
+      color: #1c8bde;
+    }
+  }

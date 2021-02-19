@@ -2,6 +2,7 @@
 @import './header.scss';
 @import './topic_type.scss';
 @import './foot.scss';
+@import './login_box.scss';
 body{
     overflow: auto;
    }
@@ -82,6 +83,171 @@ body{
                 10px;
                 a{
                     margin-left: 160px;
+                }
+            }
+        }
+        .right{
+            width: 952px;
+            overflow: hidden;
+            background: #fafbfc;
+            padding: 30px 0 14px;
+            .top_con{
+                margin-left: 58px;
+                width: 888px;
+                height: 360px;
+                overflow: hidden;
+                background: #fafbfc;
+                .goods_img{
+                    margin-top: 35px;
+                    float: left;
+                    position: relative;
+                    img{
+                        display: inline-block;
+                        width: 260px;
+                        height: auto;
+                    }
+                    div{
+                        width: 16px;
+                        height: 15px;
+                        background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                        background-position: -5px -969px;
+                        right: -1px;
+                        bottom: -17px;
+                        text-indent: -9999em;
+                        overflow: hidden;
+                        cursor: pointer;
+                        position: absolute;
+                    }
+                }
+                .goods_box{
+                    width: auto;
+                    margin-left: 23px;
+                    overflow: hidden;
+                    float: left;
+                    p{
+                        // float: left;
+                        line-height: 30px;
+                        display: block;
+                        font-size: 14px;
+                        color: #606060;
+                    }
+                    h2{
+                        // float: left;
+                        font-size: 18px;
+                        // text-indent: 15px;
+                        font-weight: bold;
+                        color: #2e2e2e;
+                        margin-top: 10px;
+                    }
+                    .bg_price{
+                        // float: left;
+                        margin-top: 6px;
+                        width: 456px;
+                        height: 76px;
+                        background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                        background-position: -5px -143px;
+                        position: relative;
+                        margin-bottom: 30px;
+                        div{
+                            display: block;
+                            clear: both;
+                            height: 30px;
+                        }
+                        .qb{
+                            padding-top: 10px;
+                        }
+                        p{
+                            float: left;
+                            line-height: 30px;
+                            display: block;
+                            font-size: 14px;
+                            color: #606060;
+                        }
+                        span{
+                            font-size: 14px;
+                            margin-left: 20px;
+                        }
+
+                        .wx{
+                            p{
+                                margin-right: 20px;
+                            }
+                            h3{
+                                font: bold 24px Arial;
+                                color: #ff5900;
+                            }
+                        }
+                    }
+                    .buy{
+                        margin-top: 10px;
+                        .incar{
+                            margin: 10px 9px 0 15px;
+                            display: inline-block;
+                            width: 142px;
+                            height: 42px;
+                            line-height: 42px;
+                            text-align: center;
+                            font-size: 18px;
+                            color: #fff;
+                            background: #f25806;
+                        }
+                        .incar:hover{
+                            background: #ff5900;
+                        }
+                        .gift{
+                            background: #259afe;
+                            margin: 10px 9px 0 15px;
+                            display: inline-block;
+                            width: 142px;
+                            height: 42px;
+                            line-height: 42px;
+                            text-align: center;
+                            font-size: 18px;
+                            color: #fff;
+                        }
+                        .gift:hover{
+                            background: #1c91f5;
+                        }
+                        
+                    }
+                }
+
+            }
+            .btm_con{
+                display: block;
+                margin: 36px 20px 20px;
+                background: #fafbfc;
+                height: auto;
+                border: 1px solid #ddd;
+                .nav{
+                    margin: 17px 0 0 75px;
+                    display: block;
+                    height: 20px;
+                    width: 705px;
+                    background-position: -5px -229px;
+                    position: relative;
+                    background-color: #fff;
+                    a{
+                        position: absolute;
+                        z-index: 4;
+                        top: -11px;
+                        left: -75px;
+                        height: 20px;
+                        font-weight: bold;
+                        color: #222;
+                        font-size: 14px;
+                    }
+                }
+                .content{
+                    width: 84%;
+                    padding: 30px 8% 0;
+                    height: auto;
+                    font-size: 14px;
+                    line-height: 22px;
+                    p{
+                        margin: 5px 0;
+                        text-align: left;
+                    }
                 }
             }
         }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品列表</title>
     <link rel="stylesheet" href="./style/clear.css">
-    <link rel="stylesheet" href="./style/shoplist.css">
+    <link rel="stylesheet" href="./style/shoppingcar.css">
 </head>
 <body>
 <div id="wrap_all">
@@ -20,7 +20,7 @@
               </ul>
             </div>
             <div class="right">
-              <p>您还未登录，请<span>登录</span></p>
+              <p>您还未登录，请<span class="log">登录</span></p>
               <ul>
                 <li>我的订单</li>
                 <li>个人中心</li>
@@ -50,10 +50,10 @@
             <div class="left">
               <ul>
                 <li>
-                  <a href="">首页</a>
+                  <a href="./index.html">首页</a>
                 </li>
-                <li class="choose">
-                  <a href="">商品列表</a></li>
+                <li>
+                  <a href="./shoplist.html">商品列表</a></li>
                 <li>
                   <a href="">活动专区</a>
                 </li>
@@ -73,14 +73,14 @@
             </div>
             <div class="right">
               <p></p>
-              <div>购物车（<span>0</span>）</div>
+              <div><a href="./shoppingcar.html" style="color: #ff5900;">购物车</a>（<span>0</span>）</div>
             </div>
           </div>
           <!-- 子导航栏 -->
           <div class="top_4">
             <ul>
               <li class="no_1">
-                <a href="">全部分类</a>
+                <a href="./shoplist.html">全部分类</a>
               </li>
               <li>
                 <a href="">英雄</a>
@@ -116,13 +116,94 @@
             您现在的位置：
             <a href="./index.html">英雄联盟</a>
             &nbsp;&nbsp;>&nbsp;&nbsp;
-            <span>全部分类</span>
+            <span>购物车</span>
         </div>
     </div>
 
     <!-- 购物车 -->
     <div id="shopcar">
-
+      <!-- 收货角色信息选择 -->
+      <div class="payman">
+        <h3>收获角色信息</h3>
+        <div class="content">
+          <div class="group">
+            <span>选择游戏角色：</span>
+            <select name="iZone" id="iZone">
+              <option value="">请选择大区</option>
+              <option value="1">艾欧尼亚 电信</option>
+            </select>
+            <select name="role" id="role">
+              <option value="">请选择角色</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- 商品信息 -->
+      <div class="carlist">
+        <h2>商品信息</h2>
+        <div class="table_box">
+          <div class="table_con">
+            <!-- <div class="head">
+              <span><input type="checkbox">&nbsp;&nbsp;全选</span>
+              <span>商品名称</span>
+              <span>类型</span>
+              <span>单价</span>
+              <span>期限</span>
+              <span>数量</span>
+              <span>优惠</span>
+              <span>小计</span>
+              <span>操作</span>
+            </div>
+            <ul class="list">
+              <li>
+                <input type="checkbox">
+                <img src="http://ossweb-img.qq.com/images/daoju/app/lol/rectangle/2-22017-.jpg?_t=1570688942" alt="">
+                <p class="name">西部天使 艾希</p>
+                <p class="pifu">皮肤</p>
+                <p class="danjia">99.00 Q币</p>
+                <i>永久</i>
+                <p class="del">-</p>
+                <p class="num">1</p>
+                <p class="add">+</p>
+                <p class="zk">限时折扣</p>
+                <p class="xiaoji">49.50 Q币</p>
+                <span>删除</span>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <!-- 优惠信息 -->
+      <div class="benefit">
+        <h2>您的优惠信息</h2>
+        <div class="discount">
+          <span>优惠券总量<span class="num">0</span></span>
+          <a href="">如何获得优惠券>></a>
+        </div>
+      </div>
+      <!-- 总价 -->
+      <div class="total">
+        <span class="xq">
+          <span>英雄联盟周边商城火热上线</span>
+          <a href="">查看详情</a>
+        </span>
+        <div class="zj">
+          实付款：<p>0.00</p> Q币
+        </div>
+        <a href="" class="sub">提交订单</a>
+      </div>
+      <!-- 温馨提示 -->
+      <div class="attention">
+        <h3>温馨提示</h3>
+        <ol>
+          <li>
+            <span style="color:red;">LOL优惠券使用规则：[道具包]分类道具全场无法使用，每张优惠券的信息，请仔细核对以下信息：订单满减的金额是否符合要求、优惠券限定可用的道具范围。</span>
+          </li>
+          <li>"购买成功后系统会自动发货，如发货失败24小时内会自动补发。"</li>
+          <li>请确认游戏中是否存在购物车中的英雄或皮肤，如果存在，请勿重复购买。</li>
+          <li>"请重新登录游戏查收物品。"<br></li>
+        </ol>
+      </div>
     </div>
 
     <!-- 通用底部 -->
@@ -195,5 +276,6 @@
         <a href="">反馈</a>
     </div>
 </div>
+<script src="./script/shoppingcar.js" type="module"></script>
 </body>
 </html>
