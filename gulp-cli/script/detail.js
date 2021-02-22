@@ -168,3 +168,13 @@ if(carnum){
 }
 $('#top .menu .top_3 .right div span').html(carnum)
       
+// *************其他功能**************
+// 点击放大图片
+// $('#lists > div.right > div.top_con > div.goods_img > div').on('click',function(){
+//   let bgimg = `
+//   <div class="bigImg">
+//     <img src="https://game.gtimg.cn/images/daoju/dbm/lol/20170216_28862_2202.jpg" alt="">
+//   </div>
+//   `
+//   $(this).parent().append()
+// })

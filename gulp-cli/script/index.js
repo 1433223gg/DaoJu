@@ -267,6 +267,7 @@ $('.new .left_content .box_type1').on('click','dl .btn',function(){
         // 数据更新到本地存储
         localStorage.setItem('goods', JSON.stringify(goodsArr) )
         alert('加入购物车成功！')
+        location.reload()
     }else{
         alert('请先登录再执行该操作！')
     }

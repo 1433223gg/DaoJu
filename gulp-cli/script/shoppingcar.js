@@ -357,3 +357,11 @@ $(function (){
 
 
 }  //登录的else
+
+
+// 提交按钮点击
+$('#shopcar > div.total > a').on('click',function(){
+  alert('购买成功！')
+  $('#shopcar > div.carlist > div > div > ul > li').remove()
+  localStorage.removeItem('goods')
+})
